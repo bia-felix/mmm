@@ -1,0 +1,2 @@
+{% extends 'base.html' %}{% block body %}<section class="panel narrow"><h1>Entrar no sistema</h1><p>Use seu acesso de administrador, cortador ou bordador.</p><form method="post">
+<input type="hidden" name="_csrf" value="{{ csrf_token }}"><label>Usuário<input name="username" required autocomplete="username"></label><label>Senha<input type="password" name="password" required autocomplete="current-password"></label><button>Entrar</button></form></section>{% endblock %}
